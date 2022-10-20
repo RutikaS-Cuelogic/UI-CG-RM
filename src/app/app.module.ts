@@ -6,17 +6,20 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
+import { DivideloginComponent } from './dividelogin/dividelogin.component';
 
 // primeng modules
 import {InputTextModule} from 'primeng/inputtext';
 import {Card, CardModule} from 'primeng/card';
 import {ButtonModule} from 'primeng/button';
+import {DividerModule} from 'primeng/divider';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    DivideloginComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,8 @@ import {ButtonModule} from 'primeng/button';
     
     InputTextModule,
     CardModule,
-    ButtonModule
+    ButtonModule,
+    DividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

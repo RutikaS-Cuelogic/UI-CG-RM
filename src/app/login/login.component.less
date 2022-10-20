@@ -1,15 +1,19 @@
-@import "src/less/colors.less";
+@import "src\\less\\colors.less";
+
 ::ng-deep.login-screen{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    background-color: @backgroundColor;
 
-    .login-card{
+    .p-card{
         width: 25rem;
         margin-bottom: 2em;
         border-radius: 20px;
+        background-color: transparent;
+        border: 1px solid white;
     }
     .login-input{
         padding: 5px;

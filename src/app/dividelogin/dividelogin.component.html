@@ -1,0 +1,33 @@
+<img src="assets/images/logowhite.png" alt="logo" class="brand-img">
+
+    <div class="grid">
+        <div class="col-4">
+            <p-card>     
+                <div class="grid p-fluid">
+                    <img src="assets/images/ltilogo.png" class="logo">
+                    <p class="text-mute">Welcome back! Please enter your details.</p>
+                    <div class="col-12 login-input">
+                        <div class="p-inputgroup">
+                            <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                            <input class="p-inputtext-sm" type="text" #username pInputText placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="col-12 login-input">
+                        <div class="p-inputgroup">
+                            <span class="p-inputgroup-addon"><i class="pi pi-lock" *ngIf="!password.value"></i><i
+                                    class="pi pi-lock-open" *ngIf="password.value"></i></span>
+                            <input #password pInputText autocomplete="off" class="p-inputtext-sm"
+                                placeholder="Enter Password" type="password">
+                        </div>
+                    </div>
+                    <p class="text-sm text-mute">Don't have an account? </p>&nbsp; <p class="text-sm" style="color:black ;"><a href="" style="text-decoration: none;"> Sign Up</a></p>
+                    <div class="col-12 login-input">
+                        <p-button label="Log in "></p-button>
+                    </div>
+                </div>
+            </p-card>
+        </div>
+       
+        <div class="col-7 sidediv" >
+        </div>
+    </div>
